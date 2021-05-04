@@ -1,0 +1,8 @@
+Install the Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation NuGet package.
+Update the project's Startup.ConfigureServices method to include a call to AddRazorRuntimeCompilation. 
+public void ConfigureServices(IServiceCollection services)
+
+{
+    services.AddRazorPages().AddRazorRuntimeCompilation();
+    // code omitted for brevity
+}
